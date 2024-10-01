@@ -36,7 +36,7 @@ resource "aws_instance" "sg-instance" {
   ami               = "ami-0aa097a5c0d31430a"
   instance_type     = "t2.micro"
   security_groups   = [aws_security_group.http_access.name]
-  availability_zone = "ap-southeast-1a"
+  availability_zone = "ap-south-1a"
   key_name          = "new-azure"
   tags = {
     Name = "Hello"
