@@ -45,7 +45,7 @@ resource "aws_instance" "sg-instance" {
  
  
 resource "aws_ebs_volume" "ebsvol" {
-  availability_zone = "ap-southeast-1a"
+  availability_zone = "ap-south-1a"
   size              = 2
  
   tags = {
