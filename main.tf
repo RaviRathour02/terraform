@@ -6,7 +6,7 @@ provider "aws" {
 resource "aws_security_group" "http_access" {
   name        = "http_access"
   description = "SG module"
-  vpc_id      = "vpc-078ff2277e559d3c9"
+  vpc_id      = "vpc-0c44112f63ac985c3"
  
   ingress {
     from_port   = "22"
@@ -28,6 +28,9 @@ resource "aws_security_group" "http_access" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
+
+tags = {
+  Name  = "my-sg"
  
 }
  
