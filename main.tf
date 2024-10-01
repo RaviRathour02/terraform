@@ -31,7 +31,7 @@ resource "aws_security_group" "http_access" {
 
 tags = {
   Name  = "my-sg"
- 
+ }
 }
  
  
